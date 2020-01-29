@@ -1,0 +1,247 @@
+/*
+COLOURS
+#242424  tamno siva
+#fabe0a  zuta
+#32d2fa  plava
+#f53f0c  crvena
+#81cc10  zelena
+*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Poppins');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    line-height: 1.3;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    color: #242424;
+    background: #eee;
+}
+/***** GRID *******/
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.row::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.col-1 {width: 8.33%;}
+
+.col-2 {width: 16.66%;}
+
+.col-3 {width: 25%;}
+
+.col-4 {width: 33.33%;}
+
+.col-5 {width: 41.66%;}
+
+.col-6 { width: 50%;}
+
+.col-7 {width: 58.33%;}
+
+.col-8 {width: 66.66%;}
+
+.col-9 {width: 75%;}
+
+.col-10 {width: 83.33%;}
+
+.col-11 {width: 91.66%;}
+
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+}
+
+.container {
+    width: 90%;
+    margin: 40px auto;
+}
+/*************
+              *************
+CUSTOM STYLES
+              *************
+*************/
+
+
+header {
+    background-image: url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+.logo {
+    float: left;
+    text-decoration: none;
+    background: white;
+    color: #242424;
+    padding: 15px 10px;
+    height: 150px;
+    width: 280px;
+    text-align: center;
+    font-size: 2rem;
+}
+.logo span {
+    color: #32d2fa;
+    padding-left: 70px;
+}
+.logo i {
+    color: #32d2fa;
+    font-size: 60px;
+    position: relative;
+    top: 30px;
+}
+nav {
+    overflow: auto;
+    padding: 80px;
+
+}
+nav ul {
+    float: right;
+}
+nav ul li {
+    display: inline-block;
+    padding: 60px 0;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin-left: 10px;
+}
+.siva {
+    background: #242424;
+}
+.zuta {
+    background: #fabe0a;
+}
+.plava {
+    background: #32d2fa;
+}
+.crvena {
+    background: #f53f0c;
+}
+.zelena {
+    background: #81cc10;  
+}
+nav ul li a {
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+.color-boxes .col-3 {
+    padding: 70px 20px;
+    margin: 15px;
+    color: white;
+    height: 330px;
+    position: relative;
+    margin-top: -200px;
+}
+.color-boxes h3 {
+    font-size: 2rem;
+}
+.color-boxes p {
+    line-height: 1.8;
+}
+.color-boxes span {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 2rem;
+}
+.welcome h2 {
+    font-size: 2rem;
+}
+.welcome button {
+    background: #81cc10;
+    cursor: pointer;
+    padding: 15px 30px;
+    font-size: 1.3rem;
+    color: white;
+    border: none;
+}
+.welcome button:hover {
+    background: #242424;
+    transition: .4s ease;
+}
+.welcome p {
+    line-height: 2;
+    padding: 20px 0;
+}
+.welcome img {
+    width: 100%;
+}
+.welcome .text {
+    background: white;
+    padding: 60px 40px;
+}
+
+.welcome .col-6 {
+    margin: 0 15px;
+}
+.lessons h2 {
+    font-size: 2rem;
+}
+.lessons button {
+    background: #81cc10;
+    cursor: pointer;
+    padding: 15px 30px;
+    font-size: 1.3rem;
+    color: white;
+    border: none;
+}
+.lessons button:hover {
+    background: #242424;
+    transition: .4s ease;
+}
+.lessons p {
+    line-height: 2;
+    padding: 20px 0;
+}
+.lessons img {
+    width: 100%;
+}
+.lessons .text {
+    background: white;
+    padding: 60px 40px;
+}
+
+.lessons .col-6 {
+    margin: 0 15px;
+}
+.top-rated {
+    background-image: url(img/top-rated.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+}
+.top-rated .text {
+    background: #f53f0c;
+    color: white;
+    padding: 80px 40px;
+    margin-top: 30px;
+    position: relative;
+}
+.top-rated h2 {
+    font-size: 2rem;
+}
+.top-rated p {
+    font-size: 1.2rem;
+}
+.top-rated i {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2rem;
+}
